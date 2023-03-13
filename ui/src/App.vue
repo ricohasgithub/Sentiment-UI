@@ -1,21 +1,22 @@
-<script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
-// import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
   <main>
-    <TheWelcome />
+    <div>
+      <b-sidebar id="sidebar-border" shadow="true" sidebar-class="border-right">
+        <div class="px-3 py-2">
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <Player></Player>
+        </div>
+      </b-sidebar>
+    </div>
   </main>
 </template>
+
+<script setup lang="ts">
+import Player from './components/Player.vue'
+</script>
 
 <style scoped>
 header {
